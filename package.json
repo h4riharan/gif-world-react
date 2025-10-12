@@ -4,6 +4,11 @@
   "private": false,
   "version": "0.0.0",
   "type": "module",
+  "repository": {
+  "type": "git",
+  "url": "https://github.com/h4riharan/gif-world-react"
+},
+  "homepage": "https://github.com/h4riharan/gif-world-react",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
