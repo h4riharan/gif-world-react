@@ -34,7 +34,7 @@ const App: React.FC = () => {
         <GifList gifs={gifs} />
       </main>
       <footer className="app-footer">
-        <span>Developer by h4ri</span>
+        <span>Developed by h4ri</span>
       </footer>
     </div>
   );
