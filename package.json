@@ -2,7 +2,7 @@
   "name": "gif-world-react",
   "author": "Hariharan M<hariharanmh001@gmail.com>",
   "private": false,
-  "version": "0.0.2",
+  "version": "0.0.3",
   "type": "module",
   "repository": {
     "type": "git",
@@ -38,7 +38,11 @@
     "vite": "^7.1.7"
   },
   "main": "dist/index.js",
+  "module": "dist/index.js",
   "types": "dist/index.d.ts",
+  "exports": {
+    ".": "./dist/index.js"
+  },
   "files": [
     "dist"
   ]

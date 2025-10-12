@@ -26,8 +26,8 @@ import { SearchBar, GifList, App } from 'gif-world-react';
 <SearchBar onSearch={handleSearch} />
 <GifList gifs={gifs} />
 
-// Or render the full app
-<App />
+// Or render the full app (pass your Giphy API key)
+<App apiKey={yourApiKey} />
 ```
 
 ### API Key
