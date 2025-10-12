@@ -3,9 +3,11 @@ import './App.css';
 import SearchBar from './components/SearchBar';
 import GifList from './components/GifList';
 
-const GIPHY_API_KEY = import.meta.env.VITE_GIPHY_API_KEY;
+interface AppProps {
+  apiKey: string;
+}
 
-const App: React.FC = () => {
+const App: React.FC<AppProps> = ({ apiKey }) => {
   const [gifs, setGifs] = useState<any[]>([]);
 
   const handleSearch = async (keyword: string) => {
@@ -14,7 +16,7 @@ const App: React.FC = () => {
       return;
     }
     try {
-      const url = `https://api.giphy.com/v1/gifs/search?api_key=${GIPHY_API_KEY}&q=${encodeURIComponent(keyword)}`;
+      const url = `https://api.giphy.com/v1/gifs/search?api_key=${apiKey}&q=${encodeURIComponent(keyword)}`;
       const response = await fetch(url);
       const data = await response.json();
       setGifs(data.data);
