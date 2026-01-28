@@ -1,6 +1,5 @@
 # GIF World React
 
-sknkjdn
 Modern, responsive React components for searching and displaying GIFs using the Giphy API.
 
 ## Features
