@@ -1,6 +1,7 @@
 # GIF World React
 
 This is a Demo Commit
+
 Modern, responsive React components for searching and displaying GIFs using the Giphy API.
 
 ## Features
